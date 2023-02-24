@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.background {
+  display: flex;
+  align-items: flex-end;
+  width: 90vw;
+  height: 52vh;
+  background: url("../../media/7d0eea20d6c53007b24b7e2c4342b8191.png");
+  border-radius: 6px;
+  background-size: cover;
+  background-position: 0 -10rem;
+}
+#frame-back {
+  position: relative;
+  left: 10%;
+  bottom: 10%;
+  width: 85%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 15px;
+}
+#title-back {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 95.19%;
+  color: #ffffff;
+  text-shadow: 1px 8px 50px rgba(255, 255, 255, 0.25);
+}
+#subtitle-back {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 95.19%;
+  color: #ffffff;
+}
+#sign-back {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 95.19%;
+  color: #ffffff;
+}
+#button-back {
+  padding: 16px;
+  width: 20%;
+  height: 18%;
+  background: linear-gradient(153.39deg, #f9a8d4 -13.9%, #f472b6 58.69%);
+  border-radius: 6px;
+  border: none;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 95.19%;
+  color: white;
+}
+@media (max-width: 815px) {
+  .background {
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #sign-back {
+    display: none;
+  }
+  #frame-back {
+    align-items: center;
+    position: none;
+    bottom: 0;
+    left: 0;
+    gap: 25px;
+  }
+  #title-back {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+  }
+  #subtitle-back {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+  }
+  #button-back {
+    width: 80%;
+    height: 40%;
+    padding: 20px 55px;
+    border-radius: 50000px;
+  }
+}
