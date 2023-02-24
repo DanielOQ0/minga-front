@@ -8,6 +8,8 @@
   height: 52vh;
   background: url("../../media/7d0eea20d6c53007b24b7e2c4342b8191.png");
   border-radius: 6px;
+  background-size: cover;
+  background-position: 0 -10rem;
 }
 #frame-back {
   position: relative;
@@ -71,7 +73,7 @@
     border-radius: 0;
     z-index: 1;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: cover;
   }
   #sign-back {
     display: none;
