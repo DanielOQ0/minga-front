@@ -73,7 +73,7 @@
     border-radius: 0;
     z-index: 1;
     background-repeat: no-repeat;
-    background-position: cover;
+    background-position: center;
   }
   #sign-back {
     display: none;
