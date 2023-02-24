@@ -1,0 +1,23 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  height: 11vh;
+  padding-top: 5px;
+}
+#logo-navbar {
+  max-height: 88px;
+}
+#button-navbar {
+  border: none;
+  background: none;
+}
+#button-navbar img {
+  max-width: 57px;
+}
+@media (max-width: 815px) {
+  .navbar {
+    position: absolute;
+    z-index: 2;
+  }
+}
