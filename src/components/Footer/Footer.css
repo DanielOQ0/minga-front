@@ -1,0 +1,170 @@
+.Footer {
+    width: 100vw;
+    height: 30rem;
+  }
+  .divFoteerSup {
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+  }
+  .imgfooter {
+    width: 100%;
+    height: 13rem;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      linear-gradient(0deg, rgba(31, 31, 31, 0.5), rgba(31, 31, 31, 0.5));
+    border: 1px solid #1f1f1f;
+    border-radius: 0 0 100% 100%;
+  }
+  .divSubscripcion {
+    width: 70%;
+    height: 10rem;
+    background: white;
+    border-radius: 30px;
+    margin-top: -4rem;
+    display: flex;
+    flex-direction: row;
+  }
+  .seccionSubscribe {
+    width: 50%;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 3.5rem;
+    margin-left: 5rem;
+    border: 2px solid rgba(75, 74, 74, 0.252);
+    border-radius: 10px;
+    padding: 5px 15px 5px 15px;
+  }
+  .botonSubscribe {
+    width: 4rem;
+    height: 80%;
+    background: linear-gradient(153.39deg, #f9a8d4 -13.9%, #f472b6 58.69%);
+    border-radius: 5px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-size: 1.2rem;
+    color: white;
+    border:none;
+  }
+  .botonDonate {
+      width: 100%;
+      height: 2.5rem;
+      margin-top: 0.5rem;
+      background: linear-gradient(153.39deg, #f9a8d4 -13.9%, #f472b6 58.69%);
+      border-radius: 5px;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-size: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      border:none;
+    }
+  .tituloSubcribe {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-size: 1.5rem;
+  }
+  .inputsubscribe {
+    width: 100%;
+    height: 2.5rem;
+    border: none;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-size: 1rem;
+  }
+  .divFooterInf {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .footerInfText {
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-size: 1rem;
+  }
+  .logofooter {
+    width: 40%;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  .imglogofooter {
+    width: 7rem;
+  }
+  .rrssFooter {
+    width: 25%;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-content: center;
+  }
+  .rrsslogos {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .botonSubscribe {
+    width: 100%;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-size: 1rem;
+  }
+  @media (max-width:900px){
+      .divSubscripcion {
+          width: 80%;
+          height: 10rem;
+          background: white;
+          border-radius: 30px;
+          margin-top: -4rem;
+          display: flex;
+          flex-direction: column;
+        }
+        .seccionSubscribe {
+          width: 70%;
+          height: 3rem;
+          display: flex;
+          flex-direction: column;
+          margin-top: 3.5rem;
+          margin-left: 5rem;
+          border: solid 1px gray;
+          border-radius: 10px;
+        }
+        .tituloSubcribe {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: "Montserrat";
+          font-style: normal;
+          font-size: 1.5rem;
+          text-align: center;
+        }
+        .divFooterInf {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+  }
