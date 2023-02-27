@@ -1,14 +1,12 @@
 import "./App.css";
-import DesTrigun from "./components/DesTrigun/DesTrigun.jsx";
-import Background from "./components/Backgroud/Background.jsx";
-import NavBar from "./components/NavBar/NavBar.jsx";
+import Register from "./components/Register/Register";
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <DesTrigun />
-      <Background />
+      {/* <NavBar />
+      <Hero /> */}
+      <Register />
     </div>
   );
 }
