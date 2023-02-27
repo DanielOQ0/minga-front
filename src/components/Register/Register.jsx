@@ -26,14 +26,16 @@ export default function Register() {
       [password.current.name]: password.current.value,
       [emailSubcribe.current.name]: emailSubcribe.current.checked,
     };
-    
-    console.log(data);
-    try {
-      await axios.post(url, data);
-      form.reset();
-    } catch (error) {
-      console.log(error);
-      console.log("ocurrio un error");
+    if(password.current.value === confirmPass.current.value){
+      try {
+        await axios.post(url, data);
+        form.reset();
+      } catch (error) {
+        console.log(error);
+        console.log("ocurrio un error");
+      }
+    }else {
+      alert("Contraseñas no coinciden")
     }
   }
   return (

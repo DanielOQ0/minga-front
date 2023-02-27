@@ -1,12 +1,10 @@
 import "./App.css";
-import Register from "./components/Register/Register";
+import Index from "./components/Index/Index.jsx";
 
 function App() {
   return (
     <div className="App">
-      {/* <NavBar />
-      <Hero /> */}
-      <Register />
+      <Index/>
     </div>
   );
 }
