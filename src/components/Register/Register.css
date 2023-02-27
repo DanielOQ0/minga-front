@@ -123,7 +123,7 @@
     height: 85vh;
   }
 }
-@media(max-width:672px){
+@media(max-width:815px){
   #image-register{
     display: none;
   }
@@ -132,7 +132,13 @@
     height: 100%;
   }
   #form-register {
-    width: 70vw;
+    width: 65vw;
+    height: 85vh;
+  }
+}
+@media(max-width:480px){
+  #form-register {
+    width: 80vw;
     height: 85vh;
   }
 }

@@ -18,7 +18,6 @@ export default function InputRegister(props) {
           className="profile-register"
           src={props.logo}
           alt="profile"
-          srcset=""
         />
       </fieldset>
     </div>
