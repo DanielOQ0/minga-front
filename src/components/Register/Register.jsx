@@ -15,6 +15,7 @@ export default function Register() {
   let password = useRef();
   let confirmPass= useRef();
   let emailSubcribe = useRef()
+  let form=document.getElementById("form-register")
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -23,11 +24,13 @@ export default function Register() {
       [name.current.name]: name.current.value,
       [email.current.name]: email.current.value,
       [password.current.name]: password.current.value,
-      [emailSubcribe.current.name]: emailSubcribe.current.value,
+      [emailSubcribe.current.name]: emailSubcribe.current.checked,
     };
+    
     console.log(data);
     try {
       await axios.post(url, data);
+      form.reset();
     } catch (error) {
       console.log(error);
       console.log("ocurrio un error");
