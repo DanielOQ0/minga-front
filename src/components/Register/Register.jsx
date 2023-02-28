@@ -8,18 +8,19 @@ import imgGoogle from '../../media/Google.png'
 import InputRegister from "../InputRegister/InputRegister";
 import {useRef} from "react";
 import axios from "axios";
+import { getActiveElement } from "@testing-library/user-event/dist/utils";
 
 export default function Register() {
   let name = useRef();
   let email = useRef();
   let password = useRef();
   let confirmPass= useRef();
-  let emailSubcribe = useRef()
-  let form=document.getElementById("form-register")
+  let emailSubcribe = useRef();
+  let form = useRef();
 
   async function handleSubmit(e) {
     e.preventDefault();
-    let url = "http://localhost:8080/users";
+    let url = "http://192.168.20.29:8080/users";
     let data = {
       [name.current.name]: name.current.value,
       [email.current.name]: email.current.value,
@@ -29,11 +30,12 @@ export default function Register() {
     if(password.current.value === confirmPass.current.value){
       try {
         await axios.post(url, data);
-        form.reset();
       } catch (error) {
         console.log(error);
         console.log("ocurrio un error");
       }
+      form.current.reset();
+      alert("Formulario enviado correctamente")
     }else {
       alert("Contraseñas no coinciden")
     }
@@ -41,7 +43,7 @@ export default function Register() {
   return (
     <div className="register">
       <div id="container-form">
-        <form id="form-register" onSubmit={handleSubmit}>
+        <form ref={form} id="form-register" onSubmit={handleSubmit}>
           <p id="title-register">Welcome!</p>
           <p id="subtitle-register">
             Discover manga, manhua and manhwa, track your progress, have fun,
@@ -95,11 +97,11 @@ export default function Register() {
           <input
             type="submit"
             id="form-button"
-            value="Sing up"
+            value="Sign up"
             name="submit"
           />
           <button id="google-button">
-            <img src={imgGoogle} id="google-logo" alt="icono-google" /> Sing in
+            <img src={imgGoogle} id="google-logo" alt="icono-google" /> Sign in
             whit google{" "}
           </button>
           <p className="text-register">
