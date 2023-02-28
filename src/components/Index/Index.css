@@ -5,12 +5,9 @@
     height: 200vh;
     width: 100%;
     padding-top:11vh;
-<<<<<<< HEAD
 }
 @media (max-width: 815px) {
     #index{
         padding-top: 0;
     }
-=======
->>>>>>> 061c0c80b2bb245fcc2b2b5271f0f456ad5ca7a8
 }
